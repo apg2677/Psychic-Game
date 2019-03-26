@@ -1,0 +1,29 @@
+body {
+  
+}
+
+.container {
+    margin-top:100px;
+    background:#ccc;
+    height:600px;
+    border-radius:8px;
+    padding:25px;
+}
+
+.label {
+    background:rgb(127, 160, 233);
+    color:white;
+    height:45px;
+    text-align:center;
+    padding:10px;
+    border-radius:4px;
+}
+
+.row {
+    height:45px;
+    margin:10px;
+}
+
+.badge {
+    float:right;
+}
