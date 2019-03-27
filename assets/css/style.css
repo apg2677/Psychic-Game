@@ -78,7 +78,7 @@ body {
 
 .divAnswer {
     background:black;
-   
+    margin-left: -10px;
     color:white;
     height:100px;
     margin-top:-80px;
@@ -87,11 +87,5 @@ body {
 }
 
 .divAnswerVal {
-    /* background:white;
-    height:50px;
-    width:150px;
-    margin-left:25px;
-    padding-left:25px;
-    color: rgb(127, 160, 233);
-    text-align: center; */
+   display: none;
 }
