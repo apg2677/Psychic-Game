@@ -5,19 +5,21 @@ var guesses = [];
 var done = false;
 var rndChar = Math.floor(Math.random() * 26 + 97);
 // var divAnswer = document.getElementsByClassName("divAnswer");
-
+var answers = [];
 
 document.onkeypress = function(event) {
 
     var tempKeyCode = event.keyCode;
     var tempChar = String.fromCharCode(tempKeyCode);
     var used = guesses.indexOf(tempChar);
-    // var rndCharVal = String.fromCharCode(rndChar);
-
+    var rndCharVal = String.fromCharCode(rndChar);
+    
+   
+    console.log(answers);
     console.log("rndChar: " + rndChar);
     console.log("tempKeyCode: " + tempKeyCode);
-    // var divAnswerVal = document.getElementById("divAnswerVal");
-    // divAnswerVal.innerHTML = rndCharVal;
+    var divAnswerVal = document.getElementById("divAnswerVal");
+    divAnswerVal.innerHTML = answers;
     
     if(tempKeyCode==rndChar) {
         wins++;
@@ -46,9 +48,10 @@ document.onkeypress = function(event) {
        
     }
     function ResetChar() {
+        answers.push(rndCharVal);
         rndChar = Math.floor(Math.random() * 26 + 97);
         var tempChar2 = String.fromCharCode(rndChar);
-     
+        
     }
 
     function ResetGuesses() {

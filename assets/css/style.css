@@ -83,15 +83,15 @@ body {
     height:100px;
     margin-top:-80px;
     padding:25px;
-    display:none;
+    
 }
 
 .divAnswerVal {
-    background:white;
+    /* background:white;
     height:50px;
     width:150px;
     margin-left:25px;
     padding-left:25px;
     color: rgb(127, 160, 233);
-    text-align: center;
+    text-align: center; */
 }
