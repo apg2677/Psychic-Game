@@ -31,7 +31,7 @@ body {
 .imgRight {
     border-radius: 4px;
     float:right;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .gameTitle {
     text-align:center;
@@ -42,4 +42,55 @@ body {
 }
 .date {
     float:right;
+}
+
+.divGuesses {
+    background: black;
+    color:white;
+    padding:5px;
+    border-radius:4px;
+}
+.footer {
+    margin-top:250px;
+    float:right;
+}
+.border {
+    border:1px solid blue;
+}
+
+.row  {
+   
+}
+.footer1 {
+    
+    
+    font-weight: bold;
+    text-align: right;
+    font-size:18pt;
+    padding-right: 20px;
+   
+}
+
+.footer2 {
+    margin-top:400px;
+   
+}
+
+.divAnswer {
+    background:black;
+   
+    color:white;
+    height:100px;
+    margin-top:-80px;
+    padding:25px;
+}
+
+.divAnswerVal {
+    background:white;
+    height:50px;
+    width:150px;
+    margin-left:25px;
+    padding-left:25px;
+    color: rgb(127, 160, 233);
+    text-align: center;
 }
