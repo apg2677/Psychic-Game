@@ -4,20 +4,24 @@ var gNum = 0;
 var guesses = [];
 var done = false;
 var rndChar = Math.floor(Math.random() * 26 + 97);
-// alert(String.fromCharCode(rndChar));
+// var divAnswer = document.getElementsByClassName("divAnswer");
 
 
 document.onkeypress = function(event) {
+
     var tempKeyCode = event.keyCode;
     var tempChar = String.fromCharCode(tempKeyCode);
     var used = guesses.indexOf(tempChar);
-    
+    // var rndCharVal = String.fromCharCode(rndChar);
+
     console.log("rndChar: " + rndChar);
     console.log("tempKeyCode: " + tempKeyCode);
+    // var divAnswerVal = document.getElementById("divAnswerVal");
+    // divAnswerVal.innerHTML = rndCharVal;
     
     if(tempKeyCode==rndChar) {
         wins++;
-        
+      
         document.getElementById("wins").innerHTML = wins;
         ResetChar();
         ResetGuesses();
@@ -44,7 +48,7 @@ document.onkeypress = function(event) {
     function ResetChar() {
         rndChar = Math.floor(Math.random() * 26 + 97);
         var tempChar2 = String.fromCharCode(rndChar);
-        
+     
     }
 
     function ResetGuesses() {
