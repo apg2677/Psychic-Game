@@ -59,7 +59,7 @@ document.onkeypress = function(event) {
         
         rndChar = Math.floor(Math.random() * 26 + 97);
         rndCharVal = String.fromCharCode(rndChar);
-        // var tempChar2 = String.fromCharCode(rndChar);
+       
         
     }
 
@@ -67,7 +67,7 @@ document.onkeypress = function(event) {
         guesses = [];
         gNum = 0;
         document.getElementById("guesses").innerHTML = guesses;
-        // divAnswerVal.style.display = "none";
+        
     }
 }
 
